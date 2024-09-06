@@ -101,3 +101,7 @@ body.light-mode header button {
     background-color: #333; /* Dark button for light background */
     color: white;
 }
+
+section h2.light-mode {
+    border-bottom: 2px solid #0073e6;
+}
