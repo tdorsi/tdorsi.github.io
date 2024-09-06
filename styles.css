@@ -103,5 +103,9 @@ body.light-mode header button {
 }
 
 section h2.light-mode {
-    border-bottom: 2px solid #0073e6;
+    border-bottom: 2px solid #586674;
+}
+
+footer.light-mode {
+    border-top: 1px solid #2a2626;
 }
