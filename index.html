@@ -3,67 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Resume of [Your Name]">
-    <title>[Your Name] - Resume</title>
+    <meta name="description" content="Professional Resume of Thomas D'Orsi">
+    <title>Thomas D'Orsi - Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>[Your Name]</h1>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a> | Phone: (123) 456-7890</p>
-        <nav>
-            <a href="#experience">Experience</a> |
-            <a href="#education">Education</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a>
-        </nav>
+        <h1>Thomas D'Orsi (He/Him)</h1>
+        <p>
+            <a href="mailto:thomas.dorsi@comcast.net">thomas.dorsi@comcast.net</a> | 
+            <a href="https://linkedin.com/in/thomas-d-orsi-03804b89">LinkedIn</a> | 
+            <a href="https://thomasdorsi.see.me">Portfolio</a> | 
+            <a href="https://illusionsincorporated.com">Company</a> |
+            <a href="https://github.com/tdorsi"> Github</a> | 
+            <a href="https://DataSciNewBI.com">Blog</a> | City, State
+        </p>
+        <button id="theme-toggle">Switch Theme</button>
     </header>
 
+    <section id="professional-summary">
+        <h2>Professional Summary</h2>
+        <p>Accomplished fintech professional with over 25 years of experience driving data solutions, digital transformation, and process innovation...</p>
+    </section>
+
     <section id="experience">
-        <h2>Experience</h2>
+        <h2>Professional Experience</h2>
+
         <div class="job">
-            <h3>Job Title - Company</h3>
-            <p><em>Start Date – End Date</em></p>
+            <h3>Fiserv – United States</h3>
+            <p><strong>Director of Data Solutions</strong> | Nov 2021 – Present (2 yrs 11 mos)</p>
             <ul>
-                <li>Responsibility or achievement #1</li>
-                <li>Responsibility or achievement #2</li>
-                <li>Responsibility or achievement #3</li>
+                <li>Pioneered innovative data analytics and visualization strategies...</li>
+                <li>Spearheaded the development of digital solutions to enhance customer experience...</li>
+                <li>Collaborated with senior leadership to drive process improvements...</li>
             </ul>
         </div>
-        <!-- Repeat job section as necessary -->
+
+        <div class="job">
+            <p><strong>Sr Manager, Business Analysis</strong> | Jul 2019 – Nov 2021 (2 yrs 5 mos)</p>
+            <ul>
+                <li>Led a team of business analysts to develop technology strategies...</li>
+                <li>Implemented data governance frameworks and business intelligence tools...</li>
+            </ul>
+        </div>
+
+        <!-- Add other roles as needed -->
+
+    </section>
+
+    <section id="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Digital Transformation Leadership</li>
+            <li>Data Analytics & Visualization</li>
+            <li>Business Analysis & Product Ownership</li>
+            <li>IT Operations & Governance</li>
+            <li>Process Optimization & Cost Reduction</li>
+        </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <div class="school">
-            <h3>Degree - Institution</h3>
-            <p><em>Start Date – End Date</em></p>
-            <p>Relevant coursework or achievements.</p>
+        <div class="education-entry">
+            <h3>Full Stack Web Development Certification</h3>
+            <p>freeCodeCamp (2016 – 2017)</p>
+            <p>Skills: UI/UX, Web Development</p>
         </div>
-        <!-- Repeat for other degrees -->
+        <!-- Add other education entries -->
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="certifications">
+        <h2>Certifications</h2>
         <ul>
-            <li>Skill #1</li>
-            <li>Skill #2</li>
-            <li>Skill #3</li>
+            <li>Generative AI for Business with Microsoft Azure OpenAI Program – Great Learning (Apr 2024)</li>
+            <li>Foundation of Artificial Intelligence – Great Learning (Dec 2023)</li>
+            <!-- Add other certifications -->
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project and your role.</p>
-            <a href="https://github.com/your-username/project-url">View on GitHub</a>
-        </div>
-        <!-- Repeat for more projects -->
-    </section>
-
     <footer>
-        <p>&copy; 2024 [Your Name] | <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/your-username">GitHub</a></p>
+        <p>&copy; 2024 Thomas D'Orsi | <a href="https://linkedin.com/in/thomas-d-orsi-03804b89">LinkedIn</a> | <a href="https://thomasdorsi.see.me">Portfolio</a></p>
     </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
+
