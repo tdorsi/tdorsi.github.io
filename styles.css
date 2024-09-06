@@ -5,23 +5,18 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Default to Dark Mode */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #f4f4f4; /* Light text for dark background */
+    background-color: #333; /* Dark background */
     padding: 20px;
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-body.dark-mode a {
-    color: #ffcc00;
+/* Styling links */
+a {
+    color: #ffcc00; /* Light link color for dark background */
 }
 
 /* Header Styling */
@@ -41,7 +36,7 @@ header p {
 }
 
 header a {
-    color: #0073e6;
+    color: #ffcc00; /* Light link color */
     text-decoration: none;
 }
 
@@ -71,7 +66,7 @@ section {
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid #0073e6;
+    border-bottom: 2px solid #ffcc00; /* Light accent color */
     padding-bottom: 10px;
 }
 
@@ -84,9 +79,25 @@ ul {
     margin-left: 20px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ffcc00;
     font-size: 0.9rem;
+}
+
+/* Toggle back to light mode */
+body.light-mode {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+body.light-mode a {
+    color: #0073e6; /* Darker links for light mode */
+}
+
+body.light-mode header button {
+    background-color: #333; /* Dark button for light background */
+    color: white;
 }
