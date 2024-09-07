@@ -104,10 +104,10 @@ body.light-mode header button {
 
 /* Light mode section styling */
 body.light-mode section h2 {
-    border-bottom: 2px solid #586674; /* Dark border for light mode */
+    border-bottom: 2px solid #b11f4b9f; /* Dark border for light mode */
 }
 
 /* Light mode footer styling */
 body.light-mode footer {
-    border-top: 1px solid #2a2626; /* Dark border for light mode */
+    border-top: 1px solid #c0104e; /* Dark border for light mode */
 }
