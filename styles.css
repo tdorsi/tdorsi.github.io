@@ -46,16 +46,17 @@ header a:hover {
 
 header button {
     padding: 10px 20px;
-    background-color: #0073e6;
+    background: linear-gradient(45deg, #959a9f, #1f2122);
     color: white;
-    border: none;
+    border: whitesmoke;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
+    transition: background 0.3s ease; /* For a smooth transition on hover */
 }
 
 header button:hover {
-    background-color: #005bb5;
+    background: linear-gradient(45deg, #959a9f, #1f2122); /* Darker gradient on hover */
 }
 
 /* Section Styling */
