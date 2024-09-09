@@ -71,6 +71,15 @@ section h2 {
     padding-bottom: 10px;
 }
 
+/* Link styling inside h2 sections */
+section h2 a {
+    color: #ffcc00; /* Same light link color for dark background */
+    text-decoration: none; /* No underline by default */
+}
+
+section h2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
 .job, .education-entry {
     margin-bottom: 20px;
 }
