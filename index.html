@@ -18,7 +18,7 @@
             <a href="https://github.com/tdorsi"> Github</a> | 
             <a href="https://DataSciNewBI.com">Blog</a> | Chambersburg, PA
         </p>
-        <button id="theme-toggle">Switch Theme</button>
+        <button id="theme-toggle">Light Theme</button>
     </header>
 
     <section id="professional-summary">
@@ -126,9 +126,22 @@
         const toggleButton = document.getElementById('theme-toggle');
         const body = document.body;
     
-        // Default is dark mode, so this toggles to light mode
+        // Function to update button text based on the current theme
+        const updateButtonText = () => {
+            if (body.classList.contains('light-mode')) {
+                toggleButton.textContent = 'Dark Theme';
+            } else {
+                toggleButton.textContent = 'Light Theme';
+            }
+        };
+    
+        // Set default text when the page loads
+        updateButtonText();
+    
+        // Toggle light mode and update button text on click
         toggleButton.addEventListener('click', () => {
             body.classList.toggle('light-mode');
+            updateButtonText(); // Update the button text after toggling
         });
     </script>
     
