@@ -74,13 +74,13 @@ section h2 {
 
 /* Link styling inside h2 sections */
 section h2 a {
-    color: #ffcc00; /* Same light link color for dark background */
-    text-decoration: none; /* No underline by default */
+    color: #ffcc00 !important; /* Same light link color for dark background */
+    text-decoration: none !important; /* No underline by default */
 }
 
 section h2 a:hover {
-    color: #ffe371; /* Light link color */
-    text-decoration: underline; /* Underline on hover */
+    color: #ffe371 !important; /* Light link color */
+    text-decoration: underline !important; /* Underline on hover */
 }
 
 .job, .education-entry {
@@ -125,13 +125,13 @@ body.light-mode section h2 {
 }
 
 body.light-mode section h2 a {
-    color: #0073e6; /* Darker color for light background */
-    text-decoration: none; /* No underline by default */
+    color: #0073e6 !important; /* Darker color for light background */
+    text-decoration: none !important; /* No underline by default */
 }
 
 body.light-mode section h2 a:hover {
-    color: #b40a45; /* Darker link color */
-    text-decoration: underline; /* Underline on hover */
+    color: #b40a45 !important; /* Darker link color */
+    text-decoration: underline !important; /* Underline on hover */
 }
 
 /* Light mode footer styling */
