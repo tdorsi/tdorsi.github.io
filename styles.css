@@ -17,6 +17,12 @@ body {
 /* Styling links */
 a {
     color: #ffcc00; /* Light link color for dark background */
+    text-decoration: none; /* No underline by default */
+}
+
+a:hover {
+    color: #ffe371; /* Light link color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Header Styling */
@@ -37,7 +43,6 @@ header p {
 
 header a {
     color: #ffcc00; /* Light link color */
-    text-decoration: none;
 }
 
 header a:hover {
@@ -83,31 +88,30 @@ section h2 a:hover {
     text-decoration: underline !important; /* Underline on hover */
 }
 
-.job, .education-entry {
-    margin-bottom: 20px;
+/* Custom link styling for certifications section */
+#certifications a {
+    color: #ffcc00; /* Light link color for dark background */
+    text-decoration: none; /* No underline by default */
 }
 
-ul {
-    list-style-type: square;
-    margin-left: 20px;
+#certifications a:hover {
+    color: #ffe371; /* Hover color for certifications section links */
+    text-decoration: underline; /* Underline on hover */
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #ffcc00;
-    font-size: 0.9rem;
-}
-
-/* Toggle back to light mode */
+/* Light Mode */
 body.light-mode {
     background-color: #f4f4f4; /* Light background */
     color: #333; /* Dark text */
 }
 
 body.light-mode a {
-    color: #0073e6; /* Darker links for light mode */
+    color: #0073e6; /* Darker link color for light mode */
+}
+
+body.light-mode a:hover {
+    color: #b40a45; /* Darker link hover color for light mode */
+    text-decoration: underline; /* Underline on hover */
 }
 
 body.light-mode header button {
@@ -132,6 +136,24 @@ body.light-mode section h2 a {
 body.light-mode section h2 a:hover {
     color: #b40a45 !important; /* Darker link color */
     text-decoration: underline !important; /* Underline on hover */
+}
+
+/* Light mode custom link styling for certifications */
+body.light-mode #certifications a {
+    color: #0073e6; /* Darker link color for light background */
+}
+
+body.light-mode #certifications a:hover {
+    color: #b40a45; /* Darker hover color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffcc00;
+    font-size: 0.9rem;
 }
 
 /* Light mode footer styling */
